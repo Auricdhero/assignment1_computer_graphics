@@ -73,8 +73,8 @@ void timer(int value)
     }
     else
     {
-        scaleFactor -= 0.01f;
-        if (scaleFactor < 0.5f)
+        scaleFactor += 0.01f;
+        if (scaleFactor > 0.5f)
         {
             growing = true;
         }
